@@ -17,7 +17,8 @@ public class Canvas extends JFrame {
 		 setSize(1000,800);
 		 GraphicalGuessingGame  g = new GraphicalGuessingGame();
 		 g.addMouseListener(g);
-		 getContentPane().add(g);
+		 //getContentPane().add(g);
+		setContentPane(g);
 	 }
 	 public void done(){
 	     	JOptionPane.showConfirmDialog(null,"Congrats you won","",JOptionPane.CLOSED_OPTION);

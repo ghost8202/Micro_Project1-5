@@ -39,9 +39,10 @@ public class PlayMusicProgressBar extends JFrame {
 			JProgressBar pb= new JProgressBar(0, duration);
 			pb.setStringPainted(true);
 			c.setTitle("Music");
-			c.getContentPane().add(pb);
+			//c.getContentPane().add(pb);
 			c.pack();
 			c.setVisible(true);
+			setContentPane(pb);
 			System.out.println(duration*1000000);
 			DataLine.Info info = new DataLine.Info(Clip.class,  format);
 			Clip audioClip = (Clip) AudioSystem.getLine(info);
